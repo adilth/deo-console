@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+use css modules for whole project name project .modules.css like this 
+use css varaible if you see it need to create a variable create in [App.css](mdc:src/App.css) 
+when create style create also the medio query for it for like desktop laptop tablit and mobile 
+
+every file have a container so i call it in [App.css](mdc:src/App.css) so wrap the class with it if there a section need to take the whole width make the inside one is the container 
+
+i do not use aliasis in my project i do not create one in my typescript or vite so do not use them 

@@ -1,0 +1,135 @@
+.contactWrapper {
+  background: var(--primary-color);
+  padding: 60px 0 40px 0;
+  color: #fff;
+}
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 42px;
+}
+.contactContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 78px;
+  flex-wrap: wrap;
+}
+.form {
+  background: #fff;
+  color: #222;
+  border-radius: 18px;
+  padding: 32px 32px 24px;
+  /* min-width: 340px;
+  max-width: 420px; */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  flex: 1;
+}
+.row {
+  display: flex;
+  gap: 42px;
+}
+.inputGroup {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.inputGroup label {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: var(--primary-color);
+}
+.inputGroup input {
+  border: transparent;
+  border-bottom: 2px solid var(--primary-color);
+}
+.inputGroup textarea {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+.inputGroup input,
+.inputGroup textarea {
+  /* border-radius: 6px; */
+  padding: 8px 10px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 2px;
+  /* background: #fafafa; */
+  transition: border 0.2s;
+}
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+  color: #b1b4c2;
+  font-size: 0.9rem;
+}
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border: 1.5px solid var(--primary-color);
+}
+.inputGroup textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.error {
+  color: #cc1f4a;
+  font-size: 0.92rem;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+.success {
+  color: #1bbf4b;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.submitBtn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitBtn:hover {
+  background: #a81a3a;
+}
+.infoBox {
+  color: #fff;
+  /* max-width: 340px; */
+  flex: 1;
+  margin-top: 16px;
+}
+.infoTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 44px;
+}
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.infoItem a {
+  color: #fff;
+  /* text-decoration: underline; */
+  font-size: 1rem;
+  word-break: break-all;
+}
+@media (max-width: 900px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+  }
+  .infoBox {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,68 @@
+.blogs-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+}
+.blogs-title {
+  color: #cc1f4a;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Aparajita Bold";
+  margin-bottom: 32px;
+  text-align: center;
+}
+.blogs-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.blog-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 18px 18px 18px;
+  /* max-width: 340px;
+  min-width: 260px; */
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid #cc1f4a22; */
+}
+.blog-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.blog-author-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #cc1f4a44;
+}
+.blog-author {
+  font-weight: bold;
+  color: #222;
+  font-size: 15px;
+}
+.blog-date {
+  color: #c5c5c5;
+  font-size: 0.85rem;
+  text-align-last: left;
+}
+.blog-card-title {
+  color: #cc1f4a;
+  font-size: 1.1rem;
+  margin: 10px 0 12px 0;
+}
+.blog-card-desc {
+  color: #444;
+  font-size: 0.98rem;
+  margin: 0;
+}

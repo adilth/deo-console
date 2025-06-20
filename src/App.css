@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #cc1f4a;
+}
+
+@font-face {
+  font-family: "CarmenSans-Bold";
+  src: url("./assets/font/carmenSans-bold.woff2");
+  src: url("./assets/font/carmenSans-bold.woff2?#iefix") format("embedded-opentype"),
+    url("./assets/font/carmenSans-bold.woff2") format("woff2"),
+    url("./assets/font/carmenSans-bold.woff") format("woff"),
+    url("./assets/font/carmenSans-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Aparajita Bold";
+  src: url("./assets/font/aparakita-bold.woff2");
+  src: url("./assets/font/aparakita-bold.woff2?#iefix") format("embedded-opentype"),
+    url("./assets/font/aparakita-bold.woff2") format("woff2"),
+    url("./assets/font/aparakita-bold.woff") format("woff"),
+    url("./assets/font/aparakita-bold.ttf") format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body {
+  font-family: "CarmenSans-Bold";
+  width: 100%;
+}
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+}
