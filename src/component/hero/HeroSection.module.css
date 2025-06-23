@@ -4,8 +4,18 @@
   justify-content: space-between;
   /* min-height: 70vh; */
   position: relative;
-  overflow: hidden;
   padding: 4rem 0 0 0;
+}
+.heroBg {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  width: 400px;
+  height: 400px;
+  background: url("../../assets/png/background-sections.png") no-repeat;
+  background-size: 350px;
+  z-index: 0;
+  pointer-events: none;
 }
 .heroContent {
   max-width: 700px;
@@ -14,14 +24,14 @@
 .heading {
   font-family: "Aparajita Bold";
   color: var(--primary-color);
-  font-size: 120px;
+  font-size: var(--font-size-h1);
   margin: 0;
   font-weight: 700;
 }
 .description {
   font-family: "CarmenSans-Bold";
   color: #22313f;
-  font-size: 18px;
+  font-size: var(--font-size-body);
   margin: 1rem 0 3rem 0;
   line-height: 1.7;
 }
@@ -32,7 +42,7 @@
   padding: 1rem 3rem;
   font-weight: 600;
   font-family: "CarmenSans-Bold";
-  font-size: 20px;
+  font-size: var(--font-size-btn);
   text-decoration: none;
   display: inline-block;
   border: none;
@@ -57,25 +67,68 @@
   z-index: -1;
   pointer-events: none;
   } */
-.heroSection::after {
-  content: "";
-  position: absolute;
-  top: -30px;
-  right: -140px;
-  width: 400px;
-  height: 400px;
-  background: url("../../assets/png/background-sections.png") no-repeat;
-  background-size: 350px;
-  /* filter: blur(15px); */
-}
 
 @media (max-width: 1580px) {
   .heroSection {
-    padding: 1rem 0 0 0;
+    padding: 1rem 1rem 0;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1280px) {
+  .heroBg {
+    top: 100px;
+    right: -10px;
+    width: 250px;
+    height: 250px;
+    background-size: 250px;
+  }
+}
+@media (max-width: 1024px) {
   .heroSection {
-    padding: 1rem 0 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem 0;
+  }
+  .heroContent {
+    max-width: 100%;
+  }
+  .heroImageWrapper {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .heroImage {
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 450px;
+  }
+}
+@media (max-width: 918px) {
+  .heroImageWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto 0;
+  }
+  .heroImage {
+    width: 100%;
+  }
+  .heroBg {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .heroSection {
+  }
+  .heading {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+  .description {
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+  }
+  .ctaBtn {
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+    padding: 0.8rem 1.5rem;
+  }
+  .heroImage {
+    margin-bottom: 5px;
   }
 }

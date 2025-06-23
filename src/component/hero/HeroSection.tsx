@@ -2,8 +2,9 @@ import styles from "./HeroSection.module.css";
 import heroImg from "../../assets/png/hero-section-image.png";
 
 const HeroSection = () => (
-  <section className={`${styles.heroSection} container`}>
-    <div className="">
+  <>
+    <div className={styles.heroBg}></div>
+    <section className={`${styles.heroSection} container`}>
       <div className={styles.heroContent}>
         <h1 className={styles.heading}>People First</h1>
         <p className={styles.description}>
@@ -20,8 +21,8 @@ const HeroSection = () => (
         <img src={heroImg} alt="People working together" className={styles.heroImage} />
         {/* <img src={bgImg} alt="Background" className={styles.bgImage} /> */}
       </div>
-    </div>
-  </section>
+    </section>
+  </>
 );
 
 export default HeroSection;

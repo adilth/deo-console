@@ -39,7 +39,7 @@
 }
 .heading {
   font-family: "CarmenSans-Bold";
-  font-size: 2.1rem;
+  font-size: var(--font-size-h3);
   color: #22313f;
   font-weight: 700;
   margin-bottom: 5rem;
@@ -71,8 +71,20 @@
   line-height: 1.35;
 }
 @media (max-width: 1100px) {
+  .image {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 18px;
+    object-fit: cover;
+  }
   .missionsGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .text {
+    font-family: "CarmenSans-Bold";
+    font-size: 1rem;
+    color: #22313f;
+    line-height: 1.35;
   }
 }
 @media (max-width: 800px) {
@@ -81,11 +93,18 @@
     gap: 2rem;
   }
   .imageWrapper {
-    justify-content: center;
+    display: none;
     margin-bottom: 1.5rem;
   }
+  .icon {
+    margin-bottom: 0.5rem;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
   .missionsGrid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 3rem;
   }
 }

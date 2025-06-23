@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./NumbersSection.module.css";
 
 const numbers = [
-  { value: 20, label: "Ans D'expérience & D'expertise" },
-  { value: 90000, label: "Collaborateurs Évalués" },
-  { value: 200, label: "Structures Accompagnées" },
-  { value: 1000, label: "Cadres & Dirigeants Coachés" },
-  { value: 20000, label: "Collaborateurs Formés" },
+  { value: 20, label: "Ans D'expérience & <br/> D'expertise" },
+  { value: 90000, label: "Collaborateurs <br/> Évalués" },
+  { value: 200, label: "Structures <br/> Accompagnées" },
+  { value: 1000, label: "Cadres & Dirigeants <br/> Coachés" },
+  { value: 20000, label: "Collaborateurs <br/> Formés" },
 ];
 
 function useCountUp(to: number, duration = 2000) {
@@ -47,7 +47,7 @@ const NumberItem = ({
   return (
     <div className={styles.numberItem}>
       <div className={styles.value}>{count.toLocaleString()}</div>
-      <div className={styles.label}>{label}</div>
+      <div className={styles.label} dangerouslySetInnerHTML={{ __html: label }} />
     </div>
   );
 };

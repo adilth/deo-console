@@ -1,5 +1,13 @@
 :root {
   --primary-color: #cc1f4a;
+  --font-size-h1: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+  --font-size-h1-5: clamp(1.8rem, 1.5rem + 4vw, 3.5rem);
+  --font-size-h2: clamp(2rem, 1.2rem + 2.5vw, 3rem);
+  --font-size-h3: clamp(1.5rem, 1rem + 1.5vw, 2.2rem);
+  --font-size-h4: clamp(1.4rem, 1rem + 1.5vw, 1.9rem);
+  --font-size-body: clamp(0.9rem, 0.9rem + 0.5vw, 1.2rem);
+  --font-size-btn: clamp(1rem, 0.8rem + 1vw, 1.25rem);
+  --supHead-size: clamp(1rem, 0.8rem + 1vw, 1.5rem);
 }
 
 @font-face {
@@ -21,12 +29,40 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: hidden;
 }
 body {
   font-family: "CarmenSans-Bold";
   width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 .container {
   max-width: 1480px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
+
+@media (max-width: 620px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+}
+/* @media (max-width: 1280px) {
+  .container {
+    max-width: 1100px;
+    padding: 0 1.5rem;
+  }
+}
+@media (max-width: 918px) {
+  .container {
+    max-width: 90vw;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    padding: 0 0.5rem;
+  }
+} */

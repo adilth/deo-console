@@ -6,7 +6,7 @@ const bio = `Jamal Belahrach est diplômé de l'Université de Saint-Denis, du p
 
 const FondateurSection = () => (
   <section className={styles.FondateurWrapper}>
-    <h2 className={styles.heading}>Le Fondateur</h2>
+    <h2 className={styles.heading}>Mots Du Président</h2>
     <div className={styles.background}>
       <div className={`${styles.fondateurSection} container`}>
         <div className={styles.left}>
