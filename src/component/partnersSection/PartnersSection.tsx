@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./PartnersSection.module.css";
 import bmciLogo from "../../assets/png/bmci-logo.png";
 import madaefLogo from "../../assets/png/madaef-groupe-logo.png";

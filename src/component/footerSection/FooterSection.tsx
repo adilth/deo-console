@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./FooterSection.module.css";
 import footerLogo from "../../assets/png/fotter-logo.png";
 import facebookIcon from "../../assets/svg/facebook.svg";

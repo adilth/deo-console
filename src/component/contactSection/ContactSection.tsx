@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./ContactSection.module.css";
 import { LocationIcon, PhoneIcon, MessageIcon } from "../../assets/IconsSvg";
 

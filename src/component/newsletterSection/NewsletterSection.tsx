@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./NewsletterSection.module.css";
 import newsletterImg from "../../assets/png/newsletter-image.png";
 

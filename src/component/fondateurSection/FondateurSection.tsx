@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./FondateurSection.module.css";
 import jamalImg from "../../assets/png/jamal-image-bio.png";
 

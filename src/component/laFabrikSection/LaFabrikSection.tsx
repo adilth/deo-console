@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./LaFabrikSection.module.css";
 import headerImg from "../../assets/png/header-la-fabrik-rh.png";
 import leadingTipsImg from "../../assets/png/leading-tips.png";

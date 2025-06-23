@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./BlogsSection.module.css";
 import blogOneImg from "../../assets/png/blog-one-le-monde-vuca.png";
 import blogTwoImg from "../../assets/png/blog-two-comment-reengager.png";
